@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="uf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="..\index.html">Principal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="legal_services.html">Servicios legales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="lawyer_management.html">Gestión de abogados</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="registration.html">Registro abogados</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="privacy_policy.html">Politica de privacidad</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contacto</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row align-items-center p-5">
+      <p class="h1 align-content-center">¡Es un gusto que estés interesado en unirte a nuestro equipo!</p>
+    </div>
+
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-4">
+        <label for="validationCustom01" class="form-label">Nombres</label>
+        <input type="text" class="form-control" id="validationCustom01" placeholder="Ingresa tu nombre" required>
+        <div class="valid-feedback">
+          Campo bien diligenciado
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom02" class="form-label">Apellidos</label>
+        <input type="text" class="form-control" id="validationCustom02" placeholder="Ingresa tus apellidos" required>
+        <div class="valid-feedback">
+          Campo bien diligenciado
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustomUsername" class="form-label">Correo electronico</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+            required>
+          <div class="invalid-feedback">
+            Por favor ingresa un correo valido
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <label for="validationCustom05" class="form-label">Número de tarjeta profesional</label>
+        <input type="number" class="form-control" id="validationCustom05" required>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom03" class="form-label">Ciudad</label>
+        <input type="text" class="form-control" id="validationCustom03" required>
+        <div class="invalid-feedback">
+          Por favor ingresa una ciudad valida
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom04" class="form-label">Departamento</label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="">Choose...</option>
+          <option>...</option>
+        </select>
+        <div class="invalid-feedback">
+          Por favor ingresa un departamento valido
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom05" class="form-label">Código postal</label>
+        <input type="text" class="form-control" id="validationCustom05" required>
+        <div class="invalid-feedback">
+          Por favor ingresa tu código postal
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="comentaryFormControlTextarea1" class="form-label">¿Tienes algún comentario o inquietud?</label>
+        <textarea class="form-control" id="comentaryFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="mb-3">
+        <p>En que campos tienes experiencia:</p>
+        <br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+          <label class="form-check-label" for="inlineCheckbox1">Laboral</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="inlineCheckbox2">Familia</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+          <label class="form-check-label" for="inlineCheckbox3">Civil</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+          <label class="form-check-label" for="inlineCheckbox4">Penal</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
+          <label class="form-check-label" for="inlineCheckbox5">Mercantil</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option3">
+          <label class="form-check-label" for="inlineCheckbox6">Procesal</label>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Aceptas terminos y condiciones
+          </label>
+          <div class="invalid-feedback">
+            Debes estar de acuerdo con los terminos y condiciones.
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="col-12 ">
+        <button class="btn btn-primary" type="submit">Enviar información</button>
+        <button class="btn btn-primary" type="reset">Borrar todo</button>
+      </div>
+    </form>
+
+  </div>
+
+  <script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+  </script>
+</body>
+
+</html>
